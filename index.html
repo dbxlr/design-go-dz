@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>الرئيسية | Design&Go DZ</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('bg-home.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+
+    header {
+      background: white;
+      text-align: center;
+      padding: 30px 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      color: #ff6600;
+      font-size: 3em;
+      text-shadow: 1px 1px #fff;
+      animation: slideDown 1s ease-out;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #333;
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 30px;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+      background: #ff6600;
+      transform: scale(1.1);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      animation: fadeIn 2s;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #ff6600;
+      text-shadow: 1px 1px #fff;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      color: #222;
+    }
+
+    form {
+      background: white;
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      width: 90%;
+      max-width: 400px;
+    }
+
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 1em;
+    }
+
+    button {
+      background: #ff6600;
+      color: white;
+      border: none;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #e55d00;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 24px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>★ Design&Go DZ ★</h1>
+</header>
+
+<nav>
+  <a href="index.html">الرئيسية</a>
+  <a href="about.html">من نحن</a>
+  <a href="services.html">الخدمات</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="gallery.html">المعرض</a>
+  <a href="contact.html">تواصل معنا</a>
+</nav>
+
+<section class="hero">
+  <h2>مرحبًا بك في Design&Go DZ</h2>
+  <p>خدمات رقمية متكاملة بجودة عالية وسرعة تنفيذ</p>
+</section>
+
+<form action="https://formspree.io/f/yourID" method="POST">
+  <h3>اكتب طلبك هنا</h3>
+  <input type="text" name="name" placeholder="اسمك" required>
+  <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
+  <textarea name="message" placeholder="تفاصيل الطلب" required></textarea>
+  <button type="submit">إرسال</button>
+</form>
+
+<a class="whatsapp-btn" href="https://wa.me/213793113293" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<footer>
+  <p>تابعنا: إنستغرام @design.n.go_dz | واتساب 0793113293 | Email: blk4631@gmail.com</p>
+</footer>
+
+</body>
+</html>

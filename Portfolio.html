@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio | Design&Go DZ</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: url('bg-portfolio.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+
+    header, footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3em;
+      color: #ff6600;
+      text-shadow: 1px 1px #fff;
+      animation: slideDown 1s ease-out;
+    }
+
+    .portfolio {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+    .portfolio-item {
+      width: 30%;
+      margin-bottom: 20px;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .portfolio-item:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Portfolio</h1>
+</header>
+
+<section class="portfolio">
+  <div class="portfolio-item">
+    <img src="portfolio1.jpg" alt="Portfolio 1">
+  </div>
+  <div class="portfolio-item">
+    <img src="portfolio2.jpg" alt="Portfolio 2">
+  </div>
+  <div class="portfolio-item">
+    <img src="portfolio3.jpg" alt="Portfolio 3">
+  </div>
+</section>
+
+<footer>
+  <p>تابعنا على وسائل التواصل الاجتماعي: إنستغرام، واتساب، بريد إلكتروني</p>
+</footer>
+
+</body>
+</html>
