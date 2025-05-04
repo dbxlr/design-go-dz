@@ -8,82 +8,156 @@
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background: url('bg-services.jpg') no-repeat center center fixed;
+      background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('bg-home.jpg') no-repeat center center fixed;
       background-size: cover;
       color: #333;
     }
 
-    header, footer {
+    header {
+      background: white;
       text-align: center;
-      padding: 20px;
-      background: rgba(0, 0, 0, 0.7);
-      color: white;
+      padding: 30px 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
 
     header h1 {
-      font-size: 3em;
       color: #ff6600;
+      font-size: 3em;
       text-shadow: 1px 1px #fff;
       animation: slideDown 1s ease-out;
     }
 
-    .services-list {
+    nav {
       display: flex;
-      justify-content: space-around;
-      padding: 20px;
+      justify-content: center;
+      background: #333;
+      flex-wrap: wrap;
+      padding: 10px;
     }
 
-    .service-item {
-      background: rgba(255, 255, 255, 0.8);
-      border-radius: 10px;
-      padding: 20px;
-      width: 30%;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      transition: transform 0.3s;
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 30px;
+      transition: background 0.3s, transform 0.3s;
     }
 
-    .service-item:hover {
+    nav a:hover {
+      background: #ff6600;
       transform: scale(1.1);
     }
 
-    .service-item h3 {
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .service {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .service:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+    }
+
+    .service i {
+      font-size: 50px;
+      margin-bottom: 15px;
       color: #ff6600;
     }
 
-    .service-item p {
-      font-size: 1em;
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    /* زر العودة إلى الأعلى */
+    .back-to-top {
+      position: fixed;
+      bottom: 50px;
+      right: 20px;
+      background: #ff6600;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 24px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: background 0.3s;
+    }
+
+    .back-to-top:hover {
+      background: #e55d00;
     }
 
     @keyframes slideDown {
       from { transform: translateY(-50px); opacity: 0; }
       to { transform: translateY(0); opacity: 1; }
     }
+
   </style>
 </head>
 <body>
 
 <header>
-  <h1>الخدمات</h1>
+  <h1>★ Design&Go DZ ★</h1>
 </header>
 
-<section class="services-list">
-  <div class="service-item">
-    <h3>تصميم مواقع</h3>
-    <p>نقدم خدمات تصميم مواقع احترافية تلبي جميع احتياجاتك.</p>
+<nav>
+  <a href="index.html">الرئيسية</a>
+  <a href="about.html">من نحن</a>
+  <a href="services.html">الخدمات</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="gallery.html">المعرض</a>
+  <a href="contact.html">تواصل معنا</a>
+</nav>
+
+<section class="services">
+  <div class="service">
+    <i class="fas fa-image"></i>
+    <h3>تصميم بوستات</h3>
+    <p>تصميم بوستات احترافية لسوشيال ميديا بجودة عالية.</p>
   </div>
-  <div class="service-item">
-    <h3>تطوير تطبيقات</h3>
-    <p>نحن متخصصون في تطوير تطبيقات موبايل مبتكرة وسهلة الاستخدام.</p>
+  <div class="service">
+    <i class="fas fa-pen-nib"></i>
+    <h3>تصميم شعارات</h3>
+    <p>شعارات مميزة تعبر عن هوية العلامة التجارية الخاصة بك.</p>
   </div>
-  <div class="service-item">
-    <h3>استشارات تكنولوجيا المعلومات</h3>
-    <p>نقدم استشارات متخصصة في تكنولوجيا المعلومات وحلول الأعمال الرقمية.</p>
+  <div class="service">
+    <i class="fas fa-file-alt"></i>
+    <h3>تصميم سير ذاتية (CV)</h3>
+    <p>كتابة وتصميم سير ذاتية احترافية لفرص العمل.</p>
+  </div>
+  <div class="service">
+    <i class="fas fa-chalkboard"></i>
+    <h3>عروض تقديمية (PowerPoint)</h3>
+    <p>إنشاء عروض تقديمية مميزة واحترافية باستخدام PowerPoint.</p>
+  </div>
+  <div class="service">
+    <i class="fas fa-laptop-code"></i>
+    <h3>إنشاء مواقع ويب</h3>
+    <p>تطوير مواقع إلكترونية تفاعلية ومتوافقة مع جميع الأجهزة.</p>
   </div>
 </section>
 
+<!-- زر العودة إلى الأعلى -->
+<a href="#top" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
 <footer>
-  <p>تابعنا على وسائل التواصل الاجتماعي: إنستغرام، واتساب، بريد إلكتروني</p>
+  <p>تابعنا: إنستغرام @design.n.go_dz | واتساب 0793113293 | Email: blk4631@gmail.com</p>
 </footer>
 
 </body>
