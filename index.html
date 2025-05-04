@@ -119,6 +119,25 @@
       animation: pulse 2s infinite;
     }
 
+    /* زر العودة إلى الأعلى */
+    .back-to-top {
+      position: fixed;
+      bottom: 50px;
+      right: 20px;
+      background: #ff6600;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 24px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: background 0.3s;
+    }
+
+    .back-to-top:hover {
+      background: #e55d00;
+    }
+
     @keyframes slideDown {
       from { transform: translateY(-50px); opacity: 0; }
       to { transform: translateY(0); opacity: 1; }
@@ -166,6 +185,9 @@
 <a class="whatsapp-btn" href="https://wa.me/213793113293" target="_blank">
   <i class="fab fa-whatsapp"></i>
 </a>
+
+<!-- زر العودة إلى الأعلى -->
+<a href="#top" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
 
 <footer>
   <p>تابعنا: إنستغرام @design.n.go_dz | واتساب 0793113293 | Email: blk4631@gmail.com</p>
